@@ -1,0 +1,1 @@
+const s=Object.freeze({root:"/",dashboard:"/dashboard",appointments:"/appointments",schedule:"/schedule",clients:"/clients",staff:"/staff",services:"/services",analytics:"/analytics",settings:"/settings",error_403:"/error/403",login:"/login",forgotPassword:"forgot-password",register:"/register",debug:"/debug"});export{s as N};
