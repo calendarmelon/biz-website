@@ -1,1 +1,0 @@
-import{j as s}from"./index-DMjyWb87.js";import"./vendor-39lPmIfa.js";import{d as r,e}from"./useLocale-D5KkehiU.js";import{C as t}from"./CCardHeader-B4dk8NaO.js";import"./redux-B4nc4lEw.js";const d=()=>s.jsxs(r,{className:"mb-4",children:[s.jsx(t,{children:"BusinessSettings"}),s.jsx(e,{children:"BusinessSettings"})]});export{d as default};

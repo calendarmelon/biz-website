@@ -1,1 +1,0 @@
-import{j as r}from"./index-DMjyWb87.js";import"./vendor-39lPmIfa.js";import{d as a,e as s}from"./useLocale-D5KkehiU.js";import{C as o}from"./CCardHeader-B4dk8NaO.js";import"./redux-B4nc4lEw.js";const n=()=>r.jsxs(a,{className:"mb-4",children:[r.jsx(o,{children:"AnalyticsDashboard"}),r.jsx(s,{children:"AnalyticsDashboard"})]});export{n as default};

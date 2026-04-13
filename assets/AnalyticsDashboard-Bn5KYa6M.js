@@ -1,1 +1,0 @@
-import{j as r}from"./index-BCkWgzQb.js";import"./vendor-CMvHcHbC.js";import{c as a,d as s}from"./CForm-CpmwTKZX.js";import{C as o}from"./CCardHeader-Dyhz8jtB.js";import"./redux-IAqEd8mO.js";const c=()=>r.jsxs(a,{className:"mb-4",children:[r.jsx(o,{children:"AnalyticsDashboard"}),r.jsx(s,{children:"AnalyticsDashboard"})]});export{c as default};
