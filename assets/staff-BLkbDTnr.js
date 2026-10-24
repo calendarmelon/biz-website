@@ -1,4 +1,4 @@
-import{d as a}from"./index-BvRnkxlx.js";const m=(e,r)=>{},_=(e,r)=>{},p=(e,r,t=!0)=>{if(!t){if(r){console.error(`[ERR] ${e}`,r);return}console.error(`[ERR] ${e}`)}},l={log:m,info:_,error:p},w=async e=>{try{const{data:r,error:t}=await a.from("employees").select("*").eq("user_id",e).eq("status","active").single();if(t)throw t;return{data:r,error:null}}catch(r){return{data:null,error:r.message}}},E=async(e,r={})=>{try{let t=a.from("employees").select(`
+import{d as a}from"./index-vgiHGoyq.js";const m=(e,r)=>{},_=(e,r)=>{},p=(e,r,t=!0)=>{if(!t){if(r){console.error(`[ERR] ${e}`,r);return}console.error(`[ERR] ${e}`)}},l={log:m,info:_,error:p},w=async e=>{try{const{data:r,error:t}=await a.from("employees").select("*").eq("user_id",e).eq("status","active").single();if(t)throw t;return{data:r,error:null}}catch(r){return{data:null,error:r.message}}},E=async(e,r={})=>{try{let t=a.from("employees").select(`
         *,
         user:profiles!employees_user_id_fkey(full_name, phone, avatar_url),
         created_by_user:profiles!employees_created_by_fkey(full_name),
