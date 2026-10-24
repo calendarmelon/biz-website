@@ -13,16 +13,33 @@
   <meta name="google" content="notranslate">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Melon Business Web Panel">
+  <meta name="description" content="Naanna Business Web Panel">
   <meta name="author" content="Łukasz Holeczek">
   <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,CSS,SCSS,HTML,RWD,Dashboard,React">
-  <title>Melon Business Web Panel</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <script type="module" crossorigin src="/assets/index-CZEQoq41.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/vendor-CMvHcHbC.js">
-  <link rel="modulepreload" crossorigin href="/assets/redux-IAqEd8mO.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-DaavSAPW.css">
+  <title>Naanna Business Web Panel</title>
+  <!-- Installable app (PWA): see src/pwa/. LocaleProvider swaps the manifest
+       and the iOS title to the panel's language. -->
+  <link rel="manifest" href="/manifest.ar.json">
+  <meta name="theme-color" content="#00665c">
+  <meta name="apple-mobile-web-app-title" content="Naanaa Biz">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- Chrome fires beforeinstallprompt once, often before React mounts: keep
+       it for the install banner (src/pwa/useInstallPrompt.js). preventDefault
+       swaps Chrome's own mini-infobar for that banner. -->
+  <script>
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault()
+      window.__deferredInstallPrompt = e
+      window.dispatchEvent(new Event('installpromptready'))
+    })
+  </script>
+  <script type="module" crossorigin src="/assets/index-BvRnkxlx.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-D0skXbI2.js">
+  <link rel="modulepreload" crossorigin href="/assets/redux-Y7t0KGX9.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-qJcXFt-J.css">
 </head>
 
 <body>
