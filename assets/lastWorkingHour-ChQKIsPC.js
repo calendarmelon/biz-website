@@ -1,0 +1,1 @@
+const n="23:59",a=r=>typeof r!="string"||!r?r:r==="00:00"||r>n?n:r,u=(r,e)=>r&&Object.fromEntries(Object.entries(r).map(([s,t])=>!t||typeof t!="object"||Array.isArray(t)||!(e in t)?[s,t]:[s,{...t,[e]:a(t[e])}]));export{n as L,a,u as l};
