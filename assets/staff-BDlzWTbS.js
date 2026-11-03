@@ -1,4 +1,4 @@
-import{d as a}from"./index-DR5ffb7H.js";const m=(e,r)=>{},_=(e,r)=>{},p=(e,r,t=!0)=>{if(!t){if(r){console.error(`[ERR] ${e}`,r);return}console.error(`[ERR] ${e}`)}},l={log:m,info:_,error:p},w=async e=>{try{const{data:r,error:t}=await a.from("employees").select("*").eq("user_id",e).eq("status","active").single();if(t)throw t;return{data:r,error:null}}catch(r){return{data:null,error:r.message}}},E=async(e,r={})=>{try{let t=a.from("employees").select(`
+import{d as a}from"./index-B0pBiFMo.js";const m=(e,r)=>{},_=(e,r)=>{},p=(e,r,t=!0)=>{if(!t){if(r){console.error(`[ERR] ${e}`,r);return}console.error(`[ERR] ${e}`)}},l={log:m,info:_,error:p},w=async e=>{try{const{data:r,error:t}=await a.from("employees").select("*").eq("user_id",e).eq("status","active").single();if(t)throw t;return{data:r,error:null}}catch(r){return{data:null,error:r.message}}},E=async(e,r={})=>{try{let t=a.from("employees").select(`
         *,
         user:profiles!employees_user_id_fkey(full_name, phone, avatar_url),
         created_by_user:profiles!employees_created_by_fkey(full_name),
@@ -41,4 +41,4 @@ import{d as a}from"./index-DR5ffb7H.js";const m=(e,r)=>{},_=(e,r)=>{},p=(e,r,t=!
         status,
         total_amount,
         appointment_date
-      `).eq("employee_id",e).gte("appointment_date",r).lte("appointment_date",t);if(n)throw n;const i=o.length,s=o.filter(d=>d.status==="completed").length,c=o.reduce((d,u)=>u.status==="completed"?d+parseFloat(u.total_amount):d,0);return{data:{total_appointments:i,completed_appointments:s,total_revenue:c,completion_rate:i>0?s/i*100:0},error:null}}catch(o){return{data:null,error:o.message}}};export{C as a,w as b,h as c,g as d,N as e,T as f,E as g,I as h,k as r,R as u,b as v};
+      `).eq("employee_id",e).gte("appointment_date",r).lte("appointment_date",t);if(n)throw n;const i=o.length,s=o.filter(d=>d.status==="completed").length,c=o.reduce((d,u)=>u.status==="completed"?d+parseFloat(u.total_amount):d,0);return{data:{total_appointments:i,completed_appointments:s,total_revenue:c,completion_rate:i>0?s/i*100:0},error:null}}catch(o){return{data:null,error:o.message}}};export{C as a,w as b,h as c,g as d,N as e,T as f,E as g,I as h,l,k as r,R as u,b as v};
